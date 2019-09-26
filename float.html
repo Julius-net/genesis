@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="dark.css">
+<link rel="stylesheet" href="prism/themes/dark.css">
 <!-- <link rel="stylesheet" href="prism/themes/prism-okaidia.css" data-noprefix /> -->
 <style>
   .floatl:before {
@@ -12,21 +12,25 @@
     content: 'Float Left';
     color: white;
   }
+
   .floatr:after {
     font-weight: bold;
     content: 'Float Right';
     color: white;
   }
+
   table {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
   }
+
   th,
   td {
     padding: 8px;
     border-bottom: 1px solid #ddd;
   }
+
   .div1 {
     float: left;
     width: 100px;
@@ -34,9 +38,11 @@
     margin: 10px;
     border: 3px solid #73AD21;
   }
+
   .div2 {
     border: 1px solid red;
   }
+
   .div3 {
     float: left;
     width: 100px;
@@ -44,11 +50,13 @@
     margin: 10px;
     border: 3px solid #73AD21;
   }
+
   .div4 {
     border: 1px solid red;
     clear: left;
   }
 </style>
+
 <body class="body">
   <!-- content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this 
@@ -74,7 +82,8 @@ example -->
           </div>
           <div class="container language-markup">
             <p class="intro">La propiedad <code>float</code> indica como debe flotar un
-              elemento.</p> se usa para posicionar y dar formato al contenido. Por ejemplo, permite que una imagen flote a la izquierda del texto dentro de un contenedor.</p>
+              elemento.</p> se usa para posicionar y dar formato al contenido. Por ejemplo, permite que una imagen flote
+            a la izquierda del texto dentro de un contenedor.</p>
             <p>Esta propiedad puede tener uno de los siguientes valores:</p>
             <table>
               <tr>
@@ -87,14 +96,16 @@ example -->
               </tr>
               <tr>
                 <th>none:</th>
-                <td>El elemento no flota.(se mostrará en la misma linea donde está en el código) esto es por defecto</td>
+                <td>El elemento no flota.(se mostrará en la misma linea donde está en el código) esto es por defecto
+                </td>
               </tr>
               <tr>
                 <th>inherit:</th>
                 <td>El elemento hereda el valor float del elemento padre</td>
               </tr>
             </table>
-            <p>En su uso más sencillo, la propiedad <code>float</code> se puede utilizar para ajustar el texto alrededor de las imágenes.</p>
+            <p>En su uso más sencillo, la propiedad <code>float</code> se puede utilizar para ajustar el texto alrededor
+              de las imágenes.</p>
             <hr>
             <h2>Ejemplo de float: right;</h2>
             <p> En el siguiente ejemplo se indica que la imagen debe flotar a la derecha del texto, y el texto del
@@ -113,34 +124,35 @@ height:170px;float:right;margin-left:15px;margin-bottom:10px;">
             <div>
               <h3>Ejemplo</h3>
               <pre><code>
-                &lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;head&gt;
-                &lt;style&gt;
-                img {
-                float: right;
-                }
-                &lt;/style&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                &lt;p&gt;&lt;img src="koala.jpg" alt="koala" style="width:170px;height:
-                170px;margin-left:15px;"&gt;
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-                nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
-                venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae 
-                massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis 
-                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut 
-                hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum 
-                dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
-                Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non 
-                fermentum. Sed dapibus pulvinar nibh tempor porta. Creas tacos para los leones peruanos. Mauris
-                quis diam velit.&lt;/p&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-                </code></pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+img {
+float: right;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;img src="koala.jpg" alt="koala" style="width:170px;height:
+170px;margin-left:15px;"&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae 
+massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis 
+sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut 
+hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum 
+dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non 
+fermentum. Sed dapibus pulvinar nibh tempor porta. Creas tacos para los leones peruanos. Mauris
+quis diam velit.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
               <hr>
               <h2>Ejemplo de float: left;</h2>
-              <p>El siguiente ejemplo especifica que una imagen debe flotar a la <strong>izquierda</strong> del texto:</p>
+              <p>El siguiente ejemplo especifica que una imagen debe flotar a la <strong>izquierda</strong> del texto:
+              </p>
               <div style="border:lightgrey solid 1px;padding:8px 16px;overflow:auto">
                 <p><img src="img/koala.jpg" alt="koala" style="width:170px;height:
 170px;float:left;margin-right:15px;margin-bottom:10px;">Lorem ipsum dolor sit
@@ -155,32 +167,32 @@ height:170px;float:right;margin-left:15px;margin-bottom:10px;">
               <div>
                 <h3>Ejemplo</h3>
                 <pre><code>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html&gt;
-                    &lt;head&gt;
-                    &lt;style&gt;
-                    img {
-                    float: left;
-                    }
-                    &lt;/style&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                    &lt;p&gt;In this example, the image will float to the left in the paragraph, and the
-                    text in the paragraph will wrap around the image.&lt;/p&gt;
-                    &lt;p&gt;&lt;img src="koala.jpg" alt="koala" style="width:170px;height:170px;margin-right:15px;"&gt;
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-                    nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
-                    venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-                    Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
-                    ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit
-                    risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
-                    at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget 
-                    tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed 
-                    dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam
-                    velit.&lt;/p&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt;
-                    </code></pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+img {
+float: left;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;In this example, the image will float to the left in the paragraph, and the
+text in the paragraph will wrap around the image.&lt;/p&gt;
+&lt;p&gt;&lt;img src="koala.jpg" alt="koala" style="width:170px;height:170px;margin-right:15px;"&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
+venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
+ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit
+risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget 
+tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed 
+dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam
+velit.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
               </div>
               <hr>
               <h2>Ejemplo de float: none</h2>
@@ -200,31 +212,31 @@ hide-small">Fusce luctus vestibulum augue ut
               <div>
                 <h3>Ejemplo</h3>
                 <pre><code>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html&gt;
-                    &lt;head&gt;
-                    &lt;style&gt;
-                    img {
-                    float: none;
-                    }
-                    &lt;/style&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                    &lt;p&gt;In this example, the image will be displayed just where it occurs in the
-                    text (float: none;).&lt;/p&gt;
-                    &lt;p&gt;&lt;img src="koala.jpg" alt="koala" style="width:170px;height:170px;"&gt;
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-                    nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
-                    venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-                    Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
-                    eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus 
-                    congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at 
-                    libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
-                    gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus 
-                    pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.&lt;/p&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt;
-                    </code></pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+img {
+float: none;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;In this example, the image will be displayed just where it occurs in the
+text (float: none;).&lt;/p&gt;
+&lt;p&gt;&lt;img src="koala.jpg" alt="koala" style="width:170px;height:170px;"&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
+venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus 
+congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at 
+libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus 
+pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
               </div>
             </div>
           </div>
@@ -232,8 +244,8 @@ hide-small">Fusce luctus vestibulum augue ut
         <hr>
         <article class="card-white">
           <div class="container">
-              <h3><b>LA PROPIEDAD CLEAR</b></h3>
-            </div>
+            <h3><b>LA PROPIEDAD CLEAR</b></h3>
+          </div>
           <div class="container language-markup">
             <p>La propiedad <code>clear</code> especifica si un elemento permite elementos flotantes a sus lados.</p>
             <p>Esta propiedad puede tener uno de los siguientes valores:</p>
@@ -260,61 +272,67 @@ hide-small">Fusce luctus vestibulum augue ut
               </tr>
             </table>
             <p>El uso más común de la propiedad <code>clear</code>
-           es después de haber usado la propiedad <code>float</code>
+              es después de haber usado la propiedad <code>float</code>
               en un elemento.</p>
-             <p> Al despejar elementos flotantes, se debe hacer coincidir el clear con el float: si un elemento flota a la izquierda, entonces se debe despejar a la izquierda. El elemento flotante continuará flotando, pero el elemento con la propiedad clear aparecerá debajo de él en la página web.</p>
-             <p>En el ejemplo siguiente se despeja el float a la izquierda. Significa que no se permiten elementos flotantes en el lado izquierdo del div:</p>
+            <p> Al despejar elementos flotantes, se debe hacer coincidir el clear con el float: si un elemento flota a
+              la izquierda, entonces se debe despejar a la izquierda. El elemento flotante continuará flotando, pero el
+              elemento con la propiedad clear aparecerá debajo de él en la página web.</p>
+            <p>En el ejemplo siguiente se despeja el float a la izquierda. Significa que no se permiten elementos
+              flotantes en el lado izquierdo del div:</p>
             <div style="border:lightgrey solid 1px;padding:8px 16px;overflow:auto">
               <h2>Sin clear</h2>
               <div class="div1">div1</div>
-              <div class="div2">div2 : Note que el div2 está después del div1 en el código HTML. Sin embargo, dado que el div1 flota a la izquierda, el texto del div2 fluye alrededor del div1.</div>
+              <div class="div2">div2 : Note que el div2 está después del div1 en el código HTML. Sin embargo, dado que
+                el div1 flota a la izquierda, el texto del div2 fluye alrededor del div1.</div>
               <br><br>
               <h2>Con clear</h2>
               <div class="div3">div3</div>
-              <div class="div4">div4 : Aquí, clear: left; mueve el div4 hacia abajo por debajo del div3 flotante. El valor "left" despeja los elementos flotantes a la izquierda. También se puede despejar a la derecha ''right" y a ambas "both".</div>
+              <div class="div4">div4 : Aquí, clear: left; mueve el div4 hacia abajo por debajo del div3 flotante. El
+                valor "left" despeja los elementos flotantes a la izquierda. También se puede despejar a la derecha
+                ''right" y a ambas "both".</div>
             </div>
             <div>
               <h3>Ejemplo</h3>
-              <pre><code>
-              &lt;!DOCTYPE html&gt;
-              &lt;html&gt;
-              &lt;head&gt;
-              &lt;style&gt;
-              .div1 {
-                float: left;
-                width: 100px;
-                height: 50px;
-                margin: 10px;
-                border: 3px solid #73AD21;
-              }
-              .div2 { 
-              border: 1px solid red; 
-              }
-              .div3 {
-                float: left;
-                width: 100px;
-                height: 50px;
-                margin: 10px;
-                border: 3px solid #73AD21;
-              }
-              .div4 {
-                border: 1px solid red;
-                clear: left;
-              }
-              &lt;/style&gt;
-              &lt;/head&gt;
-              &lt;body&gt;
-              &lt;h2&gt;Without clear&lt;/h2&gt;
-              &lt;div class="div1"&gt;div1&lt;/div&gt;
-              &lt;div class="div2"&gt;div2 : Note que el div2 está después del div1 en el código HTML.
-              Sin embargo, como el div1 flota a la izquierda, el texto en el div2 fluye alrededor del div1.&lt;/div&gt;
-              &lt;br&gt;&lt;br&gt;
-              &lt;h2&gt;With clear&lt;/h2&gt;
-              &lt;div class="div3"&gt;div3&lt;/div&gt;
-              &lt;div class="div4"&gt;div4 : Aquí, clear: left; mueve el div4 hacia abajo por debajo del div3 flotante. El valor "left" despeja los elementos flotantes a la izquierda. También se puede despejar a la derecha ''right" y a ambas "both".&lt;/div&gt;
-              &lt;/body&gt;
-              &lt;/html&gt;
-              </code></pre>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.div1 {
+float: left;
+width: 100px;
+height: 50px;
+margin: 10px;
+border: 3px solid #73AD21;
+}
+.div2 { 
+border: 1px solid red; 
+}
+.div3 {
+float: left;
+width: 100px;
+height: 50px;
+margin: 10px;
+border: 3px solid #73AD21;
+}
+.div4 {
+border: 1px solid red;
+clear: left;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Without clear&lt;/h2&gt;
+&lt;div class="div1"&gt;div1&lt;/div&gt;
+&lt;div class="div2"&gt;div2 : Note que el div2 está después del div1 en el código HTML.
+Sin embargo, como el div1 flota a la izquierda, el texto en el div2 fluye alrededor del div1.&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h2&gt;With clear&lt;/h2&gt;
+&lt;div class="div3"&gt;div3&lt;/div&gt;
+&lt;div class="div4"&gt;div4 : Aquí, clear: left; mueve el div4 hacia abajo por debajo del div3 flotante. El valor "left" despeja los elementos flotantes a la izquierda. También se puede despejar a la derecha ''right" y a ambas "both".&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
             </div>
             <hr>
           </div>
