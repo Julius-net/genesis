@@ -1,2 +1,2 @@
 # genesis
-es un tutprial para crear paginas web responsive
+es un tutorial para crear paginas web responsive
